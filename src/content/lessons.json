@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "parts-of-speech",
+    "title": "Parts of Speech as Sentence Jobs",
+    "level": 1,
+    "levelLabel": "Foundational",
+    "summary": "Students classify words by the job they perform so later revision language stays concrete.",
+    "principle": {
+      "ericRule": "Name what a word does before asking a student to revise it.",
+      "lrsRationale": "Reader-centered revision starts with knowing which words carry characters, actions, and modifiers."
+    },
+    "globalConstraints": ["Preserve authentic voice", "Explain every revision", "Use bold to show changed words"],
+    "workedExamples": [
+      {
+        "before": "The careful student revised quickly.",
+        "after": "**student** = noun/character, **revised** = verb/action, **careful** = adjective, **quickly** = adverb.",
+        "why": "The sentence becomes easier to discuss when each word has a job."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "pos-categorize-1",
+        "type": "categorize",
+        "title": "Sort the sentence jobs",
+        "directions": "Choose the job for the highlighted word.",
+        "items": [
+          {
+            "id": "pos-1",
+            "prompt": "In 'Maya carefully revised the paragraph,' what job does 'revised' perform?",
+            "options": [
+              { "id": "a", "label": "Noun / character" },
+              { "id": "b", "label": "Verb / action" },
+              { "id": "c", "label": "Adjective / describer" }
+            ],
+            "correctOptionId": "b",
+            "feedback": "Yes. 'Revised' names the action, which makes it the verb."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "process-explanatory"],
+    "accessibilityFlags": ["short-prompt", "visual-category"],
+    "prerequisites": [],
+    "evidenceTag": "Grammar terms are used as tools for generative revision, not as isolated drills."
+  },
+  {
+    "id": "sentence-structure",
+    "title": "Sentence Structure: Subject, Verb, Object",
+    "level": 1,
+    "levelLabel": "Foundational",
+    "summary": "Students build complete sentences and repair fragments and run-ons through combining.",
+    "principle": {
+      "ericRule": "Every sentence needs a clear actor and action before it can carry an argument.",
+      "lrsRationale": "Subjects-as-characters and verbs-as-actions help readers track who does what."
+    },
+    "globalConstraints": ["Use active verbs", "Avoid passive voice", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "Because the evidence was confusing.",
+        "after": "The evidence confused the reader because the paragraph skipped context.",
+        "why": "The revision adds a subject and active verb."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "sentence-combine-foundation",
+        "type": "sentence-combiner",
+        "title": "Combine without losing the actor",
+        "directions": "Combine the short sentences into one clear sentence.",
+        "items": [
+          {
+            "id": "sc-1",
+            "prompt": "Combine these: The narrator hides the letter. The letter reveals the conflict.",
+            "source": "The narrator hides the letter. The letter reveals the conflict.",
+            "feedback": "A strong answer keeps the narrator or the letter as a clear subject and uses active verbs.",
+            "model": "The narrator hides the letter, but the letter reveals the conflict.",
+            "answerLogic": {
+              "mustInclude": ["narrator", "letter"],
+              "mustAvoid": ["was", "were"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "creative-narrative"],
+    "accessibilityFlags": ["generative", "chunked"],
+    "prerequisites": ["parts-of-speech"],
+    "evidenceTag": "Sentence combining is a high-value generative mechanic."
+  },
+  {
+    "id": "agreement-tense",
+    "title": "Agreement and Tense Consistency",
+    "level": 1,
+    "levelLabel": "Foundational",
+    "summary": "Students keep subjects, verbs, and time frames aligned.",
+    "principle": {
+      "ericRule": "Correctness should protect meaning, not distract from it.",
+      "lrsRationale": "Readers stumble when grammar signals point in different directions."
+    },
+    "globalConstraints": ["Explain every revision", "Preserve authentic voice"],
+    "workedExamples": [
+      {
+        "before": "The reasons shows why the policy failed.",
+        "after": "The reasons **show** why the policy failed.",
+        "why": "The plural subject 'reasons' needs the plural verb 'show.'"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "agreement-mc",
+        "type": "multiple-choice",
+        "title": "Choose the clean verb",
+        "directions": "Pick the option that keeps the sentence grammatically steady.",
+        "items": [
+          {
+            "id": "agr-1",
+            "prompt": "The evidence ___ that the character changes.",
+            "options": [
+              { "id": "a", "label": "show" },
+              { "id": "b", "label": "shows" },
+              { "id": "c", "label": "showing" }
+            ],
+            "correctOptionId": "b",
+            "feedback": "'Evidence' is singular here, so 'shows' fits."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "research"],
+    "accessibilityFlags": ["instant-feedback"],
+    "prerequisites": ["parts-of-speech"],
+    "evidenceTag": "Used sparingly as targeted feedback, not grammar-only instruction."
+  },
+  {
+    "id": "punctuation",
+    "title": "Punctuation as Reader Signals",
+    "level": 1,
+    "levelLabel": "Foundational",
+    "summary": "Students use punctuation to guide pauses, joins, and possession.",
+    "principle": {
+      "ericRule": "Punctuation should clarify the relationship between ideas.",
+      "lrsRationale": "Readers rely on punctuation to predict how sentence parts connect."
+    },
+    "globalConstraints": ["Explain every revision", "Use bold to show changed punctuation"],
+    "workedExamples": [
+      {
+        "before": "The claim is strong however the evidence is thin.",
+        "after": "The claim is strong; **however,** the evidence is thin.",
+        "why": "The revision marks the turn between two complete ideas."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "punct-proofreader",
+        "type": "proofreader",
+        "title": "Repair the reader signal",
+        "directions": "Pick the correction that makes the sentence easiest to read.",
+        "items": [
+          {
+            "id": "punct-1",
+            "prompt": "Choose the best correction: The author builds tension but the ending releases it.",
+            "options": [
+              { "id": "a", "label": "The author builds tension, but the ending releases it." },
+              { "id": "b", "label": "The author builds, tension but the ending releases it." },
+              { "id": "c", "label": "The author builds tension but, the ending releases it." }
+            ],
+            "correctOptionId": "a",
+            "feedback": "A comma before 'but' helps join two complete clauses."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["creative-narrative", "academic-analytical"],
+    "accessibilityFlags": ["proofreading"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Proofreading ends in explanation so it remains generative."
+  },
+  {
+    "id": "coordination-subordination",
+    "title": "Coordination and Subordination",
+    "level": 1,
+    "levelLabel": "Foundational",
+    "summary": "Students connect ideas while signaling which idea matters most.",
+    "principle": {
+      "ericRule": "Combine sentences to show relationships, not just to sound longer.",
+      "lrsRationale": "Readers expect sentence shape to reveal emphasis."
+    },
+    "globalConstraints": ["Use precise active verbs", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "The character lies. The lie protects her brother.",
+        "after": "The character lies **because** the lie protects her brother.",
+        "why": "The subordinator makes the cause clear."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "coord-combine",
+        "type": "sentence-combiner",
+        "title": "Combine for meaning",
+        "directions": "Combine the sentences and make the relationship obvious.",
+        "items": [
+          {
+            "id": "coord-1",
+            "prompt": "Combine these: The experiment failed. The failure revealed a better question.",
+            "source": "The experiment failed. The failure revealed a better question.",
+            "feedback": "Try a connector like 'although,' 'because,' or 'but' depending on your intended emphasis.",
+            "model": "Although the experiment failed, the failure revealed a better question.",
+            "answerLogic": {
+              "mustInclude": ["experiment", "question"],
+              "mustAvoid": ["was failed"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["research", "process-explanatory"],
+    "accessibilityFlags": ["generative"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Sentence combining supports syntactic maturity."
+  },
+  {
+    "id": "second-person",
+    "title": "Eliminate Second Person",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students replace vague 'you' language with precise readers, people, or characters.",
+    "principle": {
+      "ericRule": "Avoid second person in academic writing unless the assignment explicitly asks for it.",
+      "lrsRationale": "Reader-based prose names the actual actor instead of pushing the reader into the sentence."
+    },
+    "globalConstraints": ["No second person", "Preserve authentic voice", "Bold every change"],
+    "workedExamples": [
+      {
+        "before": "When you read the ending, you understand the theme.",
+        "after": "When **readers** reach the ending, **they** understand the theme.",
+        "why": "The revision names the real audience instead of saying 'you.'"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "second-person-detector",
+        "type": "detector-rewrite",
+        "title": "Flag and rewrite second person",
+        "directions": "Find the issue, then rewrite the sentence without second person.",
+        "items": [
+          {
+            "id": "sp-1",
+            "prompt": "Rewrite without second person.",
+            "source": "You can see that the policy hurts families.",
+            "options": [
+              { "id": "a", "label": "You", "value": "you" },
+              { "id": "b", "label": "policy", "value": "policy" },
+              { "id": "c", "label": "families", "value": "families" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "The sentence should name the observer or remove the observer entirely.",
+            "model": "The policy harms families.",
+            "answerLogic": {
+              "mustInclude": ["policy", "families"],
+              "mustAvoid": ["you", "your"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "persuasive-argumentative"],
+    "accessibilityFlags": ["detector", "rewrite"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Detection is only the scaffold; the task ends in a produced rewrite."
+  },
+  {
+    "id": "active-passive",
+    "title": "Active Voice and Clear Actors",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students revise passive sentences so the actor performs the action.",
+    "principle": {
+      "ericRule": "Prefer active voice when the actor matters.",
+      "lrsRationale": "Subjects-as-characters and verbs-as-actions make sentences easier for readers to process."
+    },
+    "globalConstraints": ["Avoid passive voice", "Use precise active verbs", "Bold every change", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "The law was challenged by the students.",
+        "after": "The **students challenged** the law.",
+        "why": "The students become the subject and the action becomes the verb."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "passive-detector",
+        "type": "detector-rewrite",
+        "title": "Turn passive into active",
+        "directions": "Identify the passive pattern, then rewrite with the actor first.",
+        "items": [
+          {
+            "id": "pv-1",
+            "prompt": "Rewrite the sentence in active voice.",
+            "source": "The experiment was redesigned by the team.",
+            "options": [
+              { "id": "a", "label": "was redesigned by", "value": "was redesigned by" },
+              { "id": "b", "label": "experiment", "value": "experiment" },
+              { "id": "c", "label": "team", "value": "team" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "The passive pattern hides the team until the end.",
+            "model": "The team redesigned the experiment.",
+            "answerLogic": {
+              "mustInclude": ["team", "redesigned"],
+              "mustAvoid": ["was redesigned", "by the team"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["research", "academic-analytical"],
+    "accessibilityFlags": ["core-mvp", "rewrite"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Active-voice rewriting aligns Eric's rule with LRS character-action principles."
+  },
+  {
+    "id": "hooks",
+    "title": "Craft Hooks Without Overpromising",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students match hook types to essay purposes and generate a focused opening move.",
+    "principle": {
+      "ericRule": "A hook should lead toward the thesis, not float as decoration.",
+      "lrsRationale": "Problem-solution-significance openings create reader need before the claim appears."
+    },
+    "globalConstraints": ["Preserve authentic voice", "No second person", "Avoid hedging"],
+    "workedExamples": [
+      {
+        "before": "Since the beginning of time, people have argued about technology.",
+        "after": "Schools now ask students to use tools they also ask students to resist.",
+        "why": "The revision creates a real problem that points toward an argument."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "hook-match",
+        "type": "matcher",
+        "title": "Match the hook to the task",
+        "directions": "Choose the hook that best opens the assignment.",
+        "items": [
+          {
+            "id": "hook-1",
+            "prompt": "Task: argue whether schools should limit phone use.",
+            "options": [
+              { "id": "a", "label": "Phones are very popular today." },
+              { "id": "b", "label": "A device designed for connection often interrupts the attention school requires." },
+              { "id": "c", "label": "In this essay, I will talk about phones." }
+            ],
+            "correctOptionId": "b",
+            "feedback": "This hook creates a problem the argument can solve."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["persuasive-argumentative", "critical-writing"],
+    "accessibilityFlags": ["choice-before-generation"],
+    "prerequisites": ["thesis-topic"],
+    "evidenceTag": "Hook practice stays tied to problem and claim."
+  },
+  {
+    "id": "thesis-topic",
+    "title": "Point-First Thesis and Topic Sentences",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students make the main point visible early in essays and paragraphs.",
+    "principle": {
+      "ericRule": "Lead with the point before giving evidence or background.",
+      "lrsRationale": "Readers expect the topic position to reveal what the unit is about."
+    },
+    "globalConstraints": ["Avoid hedging", "Use precise active verbs", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "There are many symbols in the story, including the locked door.",
+        "after": "The locked door **shows how fear limits the narrator's choices**.",
+        "why": "The revision turns a topic into a claim."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "point-first-reorder",
+        "type": "reorder",
+        "title": "Put the point first",
+        "directions": "Move the sentence parts into a reader-friendly order.",
+        "items": [
+          {
+            "id": "pf-1",
+            "prompt": "Build a point-first topic sentence.",
+            "segments": [
+              { "id": "a", "label": "because it separates her from the family" },
+              { "id": "b", "label": "the locked door reveals the narrator's fear" },
+              { "id": "c", "label": "in the final scene" }
+            ],
+            "correctOrder": ["c", "b", "a"],
+            "feedback": "The context comes first, the point arrives early, and the reason follows.",
+            "model": "In the final scene, the locked door reveals the narrator's fear because it separates her from the family."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "compare-contrast"],
+    "accessibilityFlags": ["reorder", "core-mvp"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Point-first structure is a reusable teacher move and practice scaffold."
+  },
+  {
+    "id": "evidence-analysis",
+    "title": "Evidence and Analysis: Quote Sandwich",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students introduce evidence, quote or paraphrase it, then explain why it matters.",
+    "principle": {
+      "ericRule": "Never drop a quote without context and analysis.",
+      "lrsRationale": "Readers need old information before new evidence and significance after it."
+    },
+    "globalConstraints": ["Explain every revision", "Point-first paragraphs", "Preserve authentic voice"],
+    "workedExamples": [
+      {
+        "before": "\"The room was silent.\" This is important.",
+        "after": "After the argument, the narrator notices that \"the room was silent,\" which shows that the conflict has changed how the family communicates.",
+        "why": "The revision adds context before the quote and analysis after it."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "quote-sandwich-builder",
+        "type": "builder",
+        "title": "Build the quote sandwich",
+        "directions": "Choose one piece for each slot.",
+        "items": [
+          {
+            "id": "qs-1",
+            "prompt": "Assemble context, evidence, and analysis.",
+            "options": [
+              { "id": "context", "label": "After the argument, the narrator notices" },
+              { "id": "quote", "label": "\"the room was silent\"" },
+              { "id": "analysis", "label": "which shows that conflict has changed the family dynamic" },
+              { "id": "floating", "label": "This quote is very good" }
+            ],
+            "slots": [
+              { "id": "slot-1", "label": "Context", "correctOptionId": "context" },
+              { "id": "slot-2", "label": "Evidence", "correctOptionId": "quote" },
+              { "id": "slot-3", "label": "Analysis", "correctOptionId": "analysis" }
+            ],
+            "feedback": "A quote sandwich prepares the reader, presents evidence, then explains significance.",
+            "model": "After the argument, the narrator notices \"the room was silent,\" which shows that conflict has changed the family dynamic."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["research", "academic-analytical"],
+    "accessibilityFlags": ["builder", "chunked"],
+    "prerequisites": ["thesis-topic"],
+    "evidenceTag": "Builder tasks support strategy instruction and visible metacognition."
+  },
+  {
+    "id": "axes-paragraph",
+    "title": "AXES Paragraph Development",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students build paragraphs from Assertion, eXample, Explanation, and Significance.",
+    "principle": {
+      "ericRule": "Every body paragraph needs a point, evidence, explanation, and so-what.",
+      "lrsRationale": "Coherence comes from making each paragraph's value visible to the reader."
+    },
+    "globalConstraints": ["Point-first paragraphs", "Explain every revision", "Avoid hedging"],
+    "workedExamples": [
+      {
+        "before": "The author uses imagery. There is a storm. It is symbolic.",
+        "after": "The storm imagery reveals the narrator's fear. The repeated thunder shows that the danger feels close, not distant. This pattern matters because it turns the setting into pressure on the narrator's choice.",
+        "why": "The revision moves from assertion to evidence to explanation to significance."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "axes-builder",
+        "type": "builder",
+        "title": "Build an AXES paragraph",
+        "directions": "Choose the sentence that belongs in each AXES slot.",
+        "items": [
+          {
+            "id": "axes-1",
+            "prompt": "Assemble a paragraph about phone limits in school.",
+            "options": [
+              { "id": "assertion", "label": "Phone limits protect the kind of attention discussion requires." },
+              { "id": "example", "label": "In one class, students checked notifications during peer feedback." },
+              { "id": "explanation", "label": "Those interruptions broke the listening chain that feedback depends on." },
+              { "id": "significance", "label": "For that reason, a phone policy can support learning rather than merely punish distraction." },
+              { "id": "offtask", "label": "Many people own phones." }
+            ],
+            "slots": [
+              { "id": "a", "label": "Assertion", "correctOptionId": "assertion" },
+              { "id": "x", "label": "eXample", "correctOptionId": "example" },
+              { "id": "e", "label": "Explanation", "correctOptionId": "explanation" },
+              { "id": "s", "label": "Significance", "correctOptionId": "significance" }
+            ],
+            "feedback": "AXES paragraphs keep the point visible and make the evidence do work.",
+            "model": "Phone limits protect the kind of attention discussion requires. In one class, students checked notifications during peer feedback. Those interruptions broke the listening chain that feedback depends on. For that reason, a phone policy can support learning rather than merely punish distraction."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["persuasive-argumentative", "academic-analytical"],
+    "accessibilityFlags": ["core-mvp", "builder"],
+    "prerequisites": ["thesis-topic", "evidence-analysis"],
+    "evidenceTag": "Strategy instruction is made visible through a reusable paragraph routine."
+  },
+  {
+    "id": "common-pitfalls",
+    "title": "Mixed Pitfalls: Find, Explain, Revise",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students identify common problems and always end with a rewrite.",
+    "principle": {
+      "ericRule": "Identification is not enough; the student must revise the sentence.",
+      "lrsRationale": "Revision anticipates where the reader will stumble and removes the obstacle."
+    },
+    "globalConstraints": ["No second person", "Avoid passive voice", "Avoid hedging", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "You can maybe see that the point was made by the author.",
+        "after": "The author **argues** the point indirectly.",
+        "why": "The revision removes second person, hedging, and passive voice."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "pitfall-mc",
+        "type": "multiple-choice",
+        "title": "Name the main issue",
+        "directions": "Choose the most important revision target.",
+        "items": [
+          {
+            "id": "pit-1",
+            "prompt": "Problem sentence: You can see that the claim was weakened by vague evidence.",
+            "options": [
+              { "id": "a", "label": "Second person and passive voice" },
+              { "id": "b", "label": "Apostrophe error" },
+              { "id": "c", "label": "Run-on sentence" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "The sentence uses 'you' and hides the actor in a passive structure."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "persuasive-argumentative"],
+    "accessibilityFlags": ["mixed-review"],
+    "prerequisites": ["second-person", "active-passive"],
+    "evidenceTag": "Mixed practice supports retrieval once students know individual patterns."
+  },
+  {
+    "id": "topic-stress",
+    "title": "Topic Position and Stress Position",
+    "level": 2,
+    "levelLabel": "Intermediate",
+    "summary": "Students place familiar information first and important information last.",
+    "principle": {
+      "ericRule": "Put the sentence's topic up front and its payoff at the end.",
+      "lrsRationale": "Readers treat the start as topic position and the end as stress position."
+    },
+    "globalConstraints": ["Point-first paragraphs", "Use precise active verbs", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "A sudden confession changes the reader's view of the narrator in the final paragraph.",
+        "after": "In the final paragraph, the narrator's sudden confession changes the reader's view of her motives.",
+        "why": "The revision begins with familiar context and ends with the new interpretive payoff."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "topic-stress-reorder",
+        "type": "reorder",
+        "title": "Build reader-friendly emphasis",
+        "directions": "Place old information first and the strongest new information last.",
+        "items": [
+          {
+            "id": "ts-1",
+            "prompt": "Reorder the sentence parts.",
+            "segments": [
+              { "id": "a", "label": "changes the reader's view of her motives" },
+              { "id": "b", "label": "the narrator's confession" },
+              { "id": "c", "label": "in the final paragraph" }
+            ],
+            "correctOrder": ["c", "b", "a"],
+            "feedback": "Context first, topic next, stress at the end.",
+            "model": "In the final paragraph, the narrator's confession changes the reader's view of her motives."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "research"],
+    "accessibilityFlags": ["reorder", "core-mvp"],
+    "prerequisites": ["thesis-topic"],
+    "evidenceTag": "Reordering makes LRS reader expectations interactive."
+  },
+  {
+    "id": "nominalization",
+    "title": "Nominalizations: Turn Zombie Nouns Back into Actions",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students convert noun-heavy prose into character-action sentences.",
+    "principle": {
+      "ericRule": "Avoid nominalizations when they bury the action.",
+      "lrsRationale": "When actions become nouns, readers lose the character-action structure they expect."
+    },
+    "globalConstraints": ["No nominalizations", "Use precise active verbs", "Bold every change", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "The implementation of the policy caused confusion.",
+        "after": "The district **implemented** the policy, which **confused** families.",
+        "why": "The revision turns 'implementation' and 'confusion' back into actions."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "nominalization-rewrite",
+        "type": "detector-rewrite",
+        "title": "Revive the action",
+        "directions": "Find the nominalization, then rewrite with a clear actor and verb.",
+        "items": [
+          {
+            "id": "nom-1",
+            "prompt": "Rewrite the sentence with actions as verbs.",
+            "source": "The analysis of the poem reveals the speaker's isolation.",
+            "options": [
+              { "id": "a", "label": "analysis", "value": "analysis" },
+              { "id": "b", "label": "poem", "value": "poem" },
+              { "id": "c", "label": "speaker", "value": "speaker" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "'Analysis' hides the action 'analyzes.'",
+            "model": "The student analyzes the poem and reveals the speaker's isolation.",
+            "answerLogic": {
+              "mustInclude": ["analy"],
+              "mustAvoid": ["analysis of"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "research"],
+    "accessibilityFlags": ["core-mvp", "rewrite"],
+    "prerequisites": ["active-passive"],
+    "evidenceTag": "Directly connects Eric's no-nominalization rule to LRS character-action mapping."
+  },
+  {
+    "id": "expletives",
+    "title": "Expletive Constructions: Remove Empty Starts",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students revise 'there is' and 'it is' openings into specific subjects and verbs.",
+    "principle": {
+      "ericRule": "Avoid empty sentence starts when a specific subject can lead.",
+      "lrsRationale": "Readers expect the topic position to name what the sentence is about."
+    },
+    "globalConstraints": ["Use precise active verbs", "Bold every change", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "There are several reasons the plan fails.",
+        "after": "Several reasons **explain why** the plan fails.",
+        "why": "The revision replaces an empty opener with a concrete subject."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "expletive-rewrite",
+        "type": "detector-rewrite",
+        "title": "Replace the empty opener",
+        "directions": "Find the empty opener and rewrite with a real subject.",
+        "items": [
+          {
+            "id": "exp-1",
+            "prompt": "Rewrite with a stronger subject.",
+            "source": "There is a conflict between loyalty and honesty in the scene.",
+            "options": [
+              { "id": "a", "label": "There is", "value": "there is" },
+              { "id": "b", "label": "conflict", "value": "conflict" },
+              { "id": "c", "label": "scene", "value": "scene" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "'There is' delays the real subject.",
+            "model": "Loyalty and honesty conflict in the scene.",
+            "answerLogic": {
+              "mustInclude": ["conflict"],
+              "mustAvoid": ["there is", "there are", "it is"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "critical-writing"],
+    "accessibilityFlags": ["core-mvp", "rewrite"],
+    "prerequisites": ["sentence-structure"],
+    "evidenceTag": "Expletive revision supports point-first, reader-centered prose."
+  },
+  {
+    "id": "advanced-combining",
+    "title": "Advanced Sentence Combining for Rhetorical Purpose",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students combine sentences to emphasize cause, contrast, concession, or consequence.",
+    "principle": {
+      "ericRule": "Sentence variety should serve the argument's logic.",
+      "lrsRationale": "Readers infer relationships from sentence structure and emphasis."
+    },
+    "globalConstraints": ["Use precise active verbs", "Avoid passive voice", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "The evidence is limited. The claim remains persuasive.",
+        "after": "Although the evidence is limited, the claim remains persuasive because it rests on consistent patterns.",
+        "why": "The revision uses concession and cause."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "advanced-combine-1",
+        "type": "sentence-combiner",
+        "title": "Combine with a rhetorical goal",
+        "directions": "Combine the sentences to emphasize contrast.",
+        "items": [
+          {
+            "id": "ac-1",
+            "prompt": "Combine for contrast: The character seeks freedom. The character fears the cost of freedom.",
+            "source": "The character seeks freedom. The character fears the cost of freedom.",
+            "feedback": "A contrast connector should make the tension visible.",
+            "model": "The character seeks freedom, but she fears its cost.",
+            "answerLogic": {
+              "mustInclude": ["freedom", "fear"],
+              "mustAvoid": ["was"]
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["creative-narrative", "academic-analytical"],
+    "accessibilityFlags": ["generative"],
+    "prerequisites": ["coordination-subordination"],
+    "evidenceTag": "Sentence combining remains generative at advanced levels."
+  },
+  {
+    "id": "precision-diction",
+    "title": "Precision in Diction and Connotation",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students choose words that match tone, audience, and claim.",
+    "principle": {
+      "ericRule": "Prefer precise diction over vague intensifiers or inflated language.",
+      "lrsRationale": "Readers trust language that names the exact relationship the argument needs."
+    },
+    "globalConstraints": ["Avoid hedging", "Use precise active verbs", "Preserve authentic voice"],
+    "workedExamples": [
+      {
+        "before": "The author really shows that the policy is bad.",
+        "after": "The author **demonstrates** that the policy **isolates** students.",
+        "why": "The revision replaces vague emphasis with specific action."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "diction-mc",
+        "type": "multiple-choice",
+        "title": "Choose the precise verb",
+        "directions": "Pick the verb that creates the clearest claim.",
+        "items": [
+          {
+            "id": "dic-1",
+            "prompt": "The policy ___ students from peer support.",
+            "options": [
+              { "id": "a", "label": "does things to" },
+              { "id": "b", "label": "isolates" },
+              { "id": "c", "label": "kind of affects" }
+            ],
+            "correctOptionId": "b",
+            "feedback": "'Isolates' names a specific effect."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["persuasive-argumentative", "critical-writing"],
+    "accessibilityFlags": ["vocabulary"],
+    "prerequisites": ["active-passive"],
+    "evidenceTag": "Diction choices are tied to claim clarity, not ornament."
+  },
+  {
+    "id": "coherence-topic-strings",
+    "title": "Coherence and Topic Strings",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students track repeated topics to make paragraphs feel unified.",
+    "principle": {
+      "ericRule": "A paragraph should stay about one controlling idea.",
+      "lrsRationale": "Coherence depends on stable topic strings that help readers see the whole."
+    },
+    "globalConstraints": ["Point-first paragraphs", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "The paragraph begins with school phones, shifts to homework, then ends with cafeteria rules.",
+        "after": "The paragraph keeps returning to **attention** as its topic string.",
+        "why": "A repeated topic helps readers connect each sentence."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "topic-string-mc",
+        "type": "multiple-choice",
+        "title": "Spot the topic string",
+        "directions": "Choose the term that unifies the paragraph.",
+        "items": [
+          {
+            "id": "coh-1",
+            "prompt": "Paragraph terms: attention, focus, distraction, listening, attention. What is the topic string?",
+            "options": [
+              { "id": "a", "label": "School lunch" },
+              { "id": "b", "label": "Attention" },
+              { "id": "c", "label": "Technology brands" }
+            ],
+            "correctOptionId": "b",
+            "feedback": "The paragraph keeps returning to attention and its close relatives."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "research"],
+    "accessibilityFlags": ["highlighter"],
+    "prerequisites": ["axes-paragraph"],
+    "evidenceTag": "Topic strings connect sentence-level cohesion to paragraph-level coherence."
+  },
+  {
+    "id": "logical-fallacies",
+    "title": "Logical Fallacies",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students identify common reasoning traps before revising claims.",
+    "principle": {
+      "ericRule": "A persuasive claim must earn trust through sound reasoning.",
+      "lrsRationale": "Readers resist arguments when the reasoning path feels manipulated or incomplete."
+    },
+    "globalConstraints": ["Avoid hedging", "Explain every revision", "Preserve authentic voice"],
+    "workedExamples": [
+      {
+        "before": "Everyone who disagrees with phone limits hates learning.",
+        "after": "Some critics of phone limits worry that strict rules reduce student independence.",
+        "why": "The revision removes a straw man and states the opposing view fairly."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "fallacy-spotter",
+        "type": "fallacy-spotter",
+        "title": "Name the reasoning problem",
+        "directions": "Choose the fallacy, then read the revision cue.",
+        "items": [
+          {
+            "id": "fall-1",
+            "prompt": "If schools allow phones, students will never learn anything again.",
+            "options": [
+              { "id": "a", "label": "Slippery slope" },
+              { "id": "b", "label": "Ad hominem" },
+              { "id": "c", "label": "False authority" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "The claim jumps from one policy choice to an extreme outcome without enough support.",
+            "model": "A stronger revision would name a specific risk and support it with evidence."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["persuasive-argumentative", "critical-writing"],
+    "accessibilityFlags": ["core-mvp", "reasoning"],
+    "prerequisites": ["thesis-topic"],
+    "evidenceTag": "Fallacy spotting supports argumentative revision, not debate-point scoring."
+  },
+  {
+    "id": "character-action",
+    "title": "Subjects as Characters, Verbs as Actions",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students map the real characters and actions before rewriting dense prose.",
+    "principle": {
+      "ericRule": "Make the actor the subject and the action the verb whenever clarity requires it.",
+      "lrsRationale": "This is the core LRS sentence principle and the reason active verbs and no nominalizations work."
+    },
+    "globalConstraints": ["Avoid passive voice", "No nominalizations", "Use precise active verbs"],
+    "workedExamples": [
+      {
+        "before": "The destruction of trust occurred after the mayor's denial of responsibility.",
+        "after": "The mayor **destroyed** trust when she **denied** responsibility.",
+        "why": "The revision restores character and action."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "character-action-map",
+        "type": "builder",
+        "title": "Map character and action",
+        "directions": "Choose the real character and action hidden in the sentence.",
+        "items": [
+          {
+            "id": "ca-1",
+            "prompt": "Sentence: The denial of responsibility damaged trust.",
+            "options": [
+              { "id": "character", "label": "the mayor" },
+              { "id": "action", "label": "denied responsibility" },
+              { "id": "effect", "label": "damaged trust" },
+              { "id": "empty", "label": "there is" }
+            ],
+            "slots": [
+              { "id": "slot-character", "label": "Character", "correctOptionId": "character" },
+              { "id": "slot-action", "label": "Action", "correctOptionId": "action" },
+              { "id": "slot-effect", "label": "Effect", "correctOptionId": "effect" }
+            ],
+            "feedback": "Once the hidden character and actions are visible, revision becomes easier.",
+            "model": "The mayor denied responsibility and damaged trust."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "critical-writing"],
+    "accessibilityFlags": ["core-mvp", "builder"],
+    "prerequisites": ["nominalization", "active-passive"],
+    "evidenceTag": "This lesson unifies Eric's active-verb rules with LRS reader expectation."
+  },
+  {
+    "id": "old-before-new",
+    "title": "Old Before New Flow",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students order ideas so familiar information leads into new information.",
+    "principle": {
+      "ericRule": "Use sentence order to make the reader's path smooth.",
+      "lrsRationale": "Given-new flow helps readers attach new information to something they already know."
+    },
+    "globalConstraints": ["Point-first paragraphs", "Explain every revision"],
+    "workedExamples": [
+      {
+        "before": "A new fear appears in the narrator after the storm interrupts the trip.",
+        "after": "After the storm interrupts the trip, a new fear appears in the narrator.",
+        "why": "The revised sentence starts with context the paragraph already introduced."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "given-new-reorder",
+        "type": "reorder",
+        "title": "Order old before new",
+        "directions": "Build the sentence so familiar context leads into new emphasis.",
+        "items": [
+          {
+            "id": "gn-1",
+            "prompt": "The previous sentence introduced the storm. Reorder the next sentence.",
+            "segments": [
+              { "id": "a", "label": "a new fear appears in the narrator" },
+              { "id": "b", "label": "after the storm interrupts the trip" },
+              { "id": "c", "label": "and changes her plan" }
+            ],
+            "correctOrder": ["b", "c", "a"],
+            "feedback": "The storm is familiar, so it comes first; the narrator's fear is new, so it lands last.",
+            "model": "After the storm interrupts the trip and changes her plan, a new fear appears in the narrator."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["creative-narrative", "research"],
+    "accessibilityFlags": ["core-mvp", "reorder"],
+    "prerequisites": ["topic-stress"],
+    "evidenceTag": "Reorder tasks convert LRS flow principles into concrete practice."
+  },
+  {
+    "id": "writer-reader-prose",
+    "title": "Revise Writer-Based Prose for the Reader",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students revise drafts that make sense to the writer but leave the reader behind.",
+    "principle": {
+      "ericRule": "Revision should explain the thinking the reader cannot see.",
+      "lrsRationale": "Writer-based prose records the writer's process; reader-based prose guides the reader's understanding."
+    },
+    "globalConstraints": ["Explain every revision", "Preserve authentic voice", "Point-first paragraphs"],
+    "workedExamples": [
+      {
+        "before": "This connects to before and proves it.",
+        "after": "This scene connects to the earlier argument about loyalty because both moments show the character choosing family over safety.",
+        "why": "The revision names the connection the reader needs."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "reader-based-rewrite",
+        "type": "detector-rewrite",
+        "title": "Make the connection visible",
+        "directions": "Find the vague reference, then rewrite for a reader.",
+        "items": [
+          {
+            "id": "rb-1",
+            "prompt": "Rewrite so the reader can follow the connection.",
+            "source": "This proves the point from before.",
+            "options": [
+              { "id": "a", "label": "This", "value": "this" },
+              { "id": "b", "label": "proves", "value": "proves" },
+              { "id": "c", "label": "before", "value": "before" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "The vague 'this' asks readers to infer too much.",
+            "model": "The narrator's refusal proves that loyalty guides her choices.",
+            "answerLogic": {
+              "mustAvoid": ["this proves", "from before"],
+              "minWords": 7
+            }
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "research"],
+    "accessibilityFlags": ["rewrite", "metacognition"],
+    "prerequisites": ["coherence-topic-strings"],
+    "evidenceTag": "Reader-based revision makes metacognition explicit."
+  },
+  {
+    "id": "problem-solution-significance",
+    "title": "Problem, Solution, Significance Introductions",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students frame introductions around a reader-relevant problem and a meaningful payoff.",
+    "principle": {
+      "ericRule": "An introduction should create a reason the thesis matters.",
+      "lrsRationale": "Academic readers value writing that changes how they see a problem."
+    },
+    "globalConstraints": ["Avoid hedging", "No second person", "Point-first structure"],
+    "workedExamples": [
+      {
+        "before": "This essay is about homework.",
+        "after": "Homework should build independence, but poorly designed assignments often measure access to time and support instead.",
+        "why": "The revision creates a problem and points toward significance."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "intro-builder",
+        "type": "builder",
+        "title": "Scaffold the introduction",
+        "directions": "Choose the sentence that fills each introduction role.",
+        "items": [
+          {
+            "id": "intro-1",
+            "prompt": "Build a problem-solution-significance introduction about homework.",
+            "options": [
+              { "id": "problem", "label": "Homework should build independence, but some assignments mostly measure access to support." },
+              { "id": "solution", "label": "Schools should design homework that students can begin and assess on their own." },
+              { "id": "significance", "label": "That shift would make homework a practice tool rather than an equity problem." },
+              { "id": "filler", "label": "Homework has existed for a long time." }
+            ],
+            "slots": [
+              { "id": "problem-slot", "label": "Problem", "correctOptionId": "problem" },
+              { "id": "solution-slot", "label": "Solution", "correctOptionId": "solution" },
+              { "id": "significance-slot", "label": "Significance", "correctOptionId": "significance" }
+            ],
+            "feedback": "The introduction creates need, answers it, and explains why the answer matters.",
+            "model": "Homework should build independence, but some assignments mostly measure access to support. Schools should design homework that students can begin and assess on their own. That shift would make homework a practice tool rather than an equity problem."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["persuasive-argumentative", "research"],
+    "accessibilityFlags": ["builder", "advanced"],
+    "prerequisites": ["thesis-topic", "writer-reader-prose"],
+    "evidenceTag": "Problem-solution-significance turns introductions into reader-value moves."
+  },
+  {
+    "id": "reader-expectation-checklist",
+    "title": "Reader-Expectation Revision Checklist",
+    "level": 3,
+    "levelLabel": "Advanced",
+    "summary": "Students run a final reader-centered revision pass across the whole draft.",
+    "principle": {
+      "ericRule": "Every revision should be visible, explained, and connected to the reader's experience.",
+      "lrsRationale": "Revision predicts where the reader will stumble and repairs that path."
+    },
+    "globalConstraints": ["Bold every change", "Explain every revision", "Preserve authentic voice"],
+    "workedExamples": [
+      {
+        "before": "A draft with hidden actors, delayed points, and unsupported quotes.",
+        "after": "A draft with clear characters/actions, point-first paragraphs, and analyzed evidence.",
+        "why": "The checklist keeps revision focused on reader expectations."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "revision-checklist",
+        "type": "multiple-choice",
+        "title": "Pick the best next revision",
+        "directions": "Choose the next reader-centered move.",
+        "items": [
+          {
+            "id": "rev-1",
+            "prompt": "A paragraph begins with background, uses a dropped quote, and ends without analysis. What should happen first?",
+            "options": [
+              { "id": "a", "label": "Add a point-first topic sentence" },
+              { "id": "b", "label": "Change the font" },
+              { "id": "c", "label": "Add a longer quote" }
+            ],
+            "correctOptionId": "a",
+            "feedback": "Readers need the point before evidence can matter."
+          }
+        ]
+      }
+    ],
+    "essayTypeTags": ["academic-analytical", "persuasive-argumentative", "research", "critical-writing"],
+    "accessibilityFlags": ["checklist", "teacher-tool"],
+    "prerequisites": ["active-passive", "nominalization", "old-before-new", "axes-paragraph"],
+    "evidenceTag": "Checklist use supports self-regulated strategy development."
+  }
+]

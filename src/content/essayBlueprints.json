@@ -1,0 +1,58 @@
+[
+  {
+    "id": "academic-analytical",
+    "title": "Academic / Analytical",
+    "bestFor": "Literary analysis, history essays, and close-reading tasks.",
+    "steps": ["Problem or interpretive question", "Point-first thesis", "AXES body paragraphs", "So-what conclusion"],
+    "teachMoves": ["Ask what the reader needs to understand first", "Underline topic strings", "Check that each paragraph advances one claim"],
+    "practiceScaffold": "Students build a thesis, then assemble one AXES paragraph before drafting the whole essay."
+  },
+  {
+    "id": "persuasive-argumentative",
+    "title": "Persuasive / Argumentative",
+    "bestFor": "Position papers, op-eds, debate prep, and claim-evidence reasoning.",
+    "steps": ["Problem readers care about", "Debatable claim", "Evidence chain", "Counterargument and response", "Call to significance"],
+    "teachMoves": ["Separate claim from topic", "Name the reader's likely objection", "Force evidence into analysis, not summary"],
+    "practiceScaffold": "Students choose a claim, rank reasons, build a quote sandwich, and revise for reader objections."
+  },
+  {
+    "id": "research",
+    "title": "Research",
+    "bestFor": "Source-based essays and inquiry projects.",
+    "steps": ["Research problem", "Working claim", "Source map", "Integrated evidence", "Contribution"],
+    "teachMoves": ["Track what each source contributes", "Require old-before-new source transitions", "End paragraphs with significance"],
+    "practiceScaffold": "Students sort sources by role, then practice quote sandwiches and synthesis transitions."
+  },
+  {
+    "id": "creative-narrative",
+    "title": "Creative / Narrative",
+    "bestFor": "Personal narratives, application essays, and fiction-inflected school writing.",
+    "steps": ["Scene or tension", "Specific character action", "Reflection", "Meaning shift"],
+    "teachMoves": ["Turn vague feelings into visible actions", "Preserve voice while sharpening verbs", "Connect scene to reflective point"],
+    "practiceScaffold": "Students draft a scene, mark characters/actions, then revise one paragraph for concrete stakes."
+  },
+  {
+    "id": "compare-contrast",
+    "title": "Compare / Contrast",
+    "bestFor": "Paired texts, historical comparisons, and evaluation essays.",
+    "steps": ["Reason for comparison", "Shared criteria", "Point-by-point structure", "Interpretive payoff"],
+    "teachMoves": ["Prevent list-like organization", "Use criteria as topic strings", "Make the comparison change the reader's view"],
+    "practiceScaffold": "Students rank comparison criteria, then build point-first body paragraphs."
+  },
+  {
+    "id": "process-explanatory",
+    "title": "Process / Explanatory",
+    "bestFor": "How-to, scientific explanation, and concept-teaching assignments.",
+    "steps": ["Reader need", "Sequence", "Cause/effect links", "Check for missing steps"],
+    "teachMoves": ["Use old-before-new sequencing", "Name hidden assumptions", "Replace nominalizations with actions"],
+    "practiceScaffold": "Students reorder steps, combine sentences, and revise for a reader who is new to the topic."
+  },
+  {
+    "id": "critical-writing",
+    "title": "Critical Writing",
+    "bestFor": "Reviews, rhetorical analysis, and critique.",
+    "steps": ["Object of critique", "Criteria", "Judgment", "Evidence", "Implication"],
+    "teachMoves": ["Define standards before judgment", "Spot fallacies", "Move from preference to reasoned evaluation"],
+    "practiceScaffold": "Students identify fallacies, build criteria, and revise claims for precise diction."
+  }
+]
